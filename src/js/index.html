@@ -6,13 +6,78 @@
     <title>Text Editor</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../../dist/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
-    <div class="container">
-        
-    </div>
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Text Editor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-inner" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button id="textBold" class="btn item-change"><i class="fa fa-bold"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn item-change"><i class="fa fa-underline"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn item-change"><i class="fa fa-italic"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn item-change"><i class="fa fa-strikethrough"></i></button>
+                        </li>
+                    </ul>
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="btn item-change"><i class="fa fa-align-left"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn item-change"><i class="fa fa-align-center"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn item-change"><i class="fa fa-align-right"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn item-change"><i class="fa fa-align-justify"></i></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-options">
+                    <div class="dropdown">
+                        <button class="btn-drop-down">Font Family</button>
+                        <div class="dropdown-content">
+                            <a href="#">Helvetica</a>
+                            <a href="#">Arial</a>
+                            <a href="#">Colibri</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn-drop-down">Font Size</button>
+                        <div class="dropdown-content">
+                            <a href="#">14</a>
+                            <a href="#">16</a>
+                            <a href="#">18</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </nav>
+
+      <div class="container">
+          <div class="content-editor">
+            <div class="text-area" id="textArea" contenteditable="true">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio rerum dicta dolorem nihil at deserunt quaerat eveniet perspiciatis esse aliquid, magni amet. Non voluptatum at voluptate inventore dicta, obcaecati a.
+                <input style="display: none;" type='text' id='input' />
+            </div>
+          </div>
+      </div>
 
     <script src="app.js"></script>
+    
 </body>
 </html>
